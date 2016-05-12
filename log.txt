@@ -1,0 +1,16 @@
+2008-12-14 15:07:54
+----------------------------------------
+select a.rq,a.mc,a.ip,a.hu,b.* from ( select rq,(select name from operator where rybm=bm) mc,ip,hu ,danjuhao from register_del_log ) a,( SELECT DANJUHAO,RIQI,sickbm,SICKNAME,DOCTORNAME,划价员名,收费员名,发药员名,
+( SELECT ds1 FROM lsq_upgrade Where ds2=upper('gh_type') and ds3=GHTYPE ) gh2 ,
+GHF,MEDMONEY,TREATEMoney,MEDMONEY+TreateMONEY mt,  
+  profit ,p1, p4,decode( ghtype,'特定门诊',
+  Medmoney+treateMoney-NVL(p1,0)-NVL(p4,0)-NVL(p3,0)-NVL(p2,0)-NVL(cash,0)-NVL(p6,0) ,
+  p5)  ptc ,decode ( ghtype,'基本保险',medMoney+treateMoney-nvl(cash,0),
+  '居民统筹',Medmoney+treateMoney-NVL(cash,0),p3)   LP3,p2,cash,decode( ghtype,'补充保险',medMoney+treateMoney-cash,'供养亲属',
+  medMoney+treateMoney-cash,p6) pzh,Decode(ghtype,'工伤人员',
+  NVL(medmoney,0)+NVL(treatemoney,0)-(cash),       '建国前老工人', 
+  (NVL(medmoney,0)+NVL(treatemoney,0))-(cash),       '退养人员', 
+  (NVL(medmoney,0)+NVL(treatemoney,0))-(cash),       '离休人员', 
+  (NVL(medmoney,0)+NVL(treatemoney,0))-(cash),0) 报销费用 FROM ITEMREGISTERTOU_DEL WHERE riqi BETWEEN to_date('20081201','yyyymmdd') 			and to_date('20081214','yyyymmdd')    ORDER by riqi,danjuhao ) b
+where a.danjuhao=b.danjuhao order by a.rq
+

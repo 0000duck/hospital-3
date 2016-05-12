@@ -1,0 +1,2482 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\his3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\firstaid.ico"
+IDI_ICON_QUERY          ICON    DISCARDABLE     "res\\Sherlock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP_LOGON        BITMAP  DISCARDABLE     "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  67, 32
+BEGIN
+    BUTTON      ID_MENUITEM_GHOPER
+    SEPARATOR
+    BUTTON      ID_MENU_GH_GETMED
+    SEPARATOR
+    BUTTON      ID_MENU_REPORT_VIEW
+    SEPARATOR
+    BUTTON      ID_MENUITEM_MED_QUERY
+    SEPARATOR
+    BUTTON      ID_MENU_LOCK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "就诊(&F)"
+    BEGIN
+        MENUITEM "挂号",                        ID_MENUITEM_GHOPER
+        MENUITEM SEPARATOR
+        MENUITEM "划价",                        ID_MENUITEM32778
+        MENUITEM "收费",                        ID_MENUITEM32779
+        MENUITEM SEPARATOR
+        MENUITEM "取药",                        ID_MENU_GH_GETMED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "医院管理"
+    BEGIN
+        MENUITEM "费用报销",                    ID_MENU_COST_CONSUME
+        MENUITEM SEPARATOR
+        MENUITEM "年度特殊补助",                ID_MENUITEM_PECULIAR_ADD
+        MENUITEM SEPARATOR
+        MENUITEM "补充医保基金征集表",          ID_MENUITEM_BCYB_ZJB
+        MENUITEM "补充医保基金结算表",          ID_MENUITEM_BCYB_JSB
+        MENUITEM SEPARATOR
+        MENUITEM "年度统筹基金利息结算",        ID_MENU_PLANWHOLE
+    END
+    POPUP "报表查询"
+    BEGIN
+        MENUITEM "门诊查询",                    ID_MENU_REPORT_MZCX
+        MENUITEM "费用报销查询",                ID_MENU_REPORT_DECHARGE
+        MENUITEM SEPARATOR
+        MENUITEM "药品消耗统计",                ID_MENUITEM_MED_CONSUME
+        MENUITEM SEPARATOR
+        MENUITEM "收入汇总",                    ID_MENU_REPORT_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "月度就诊报表",                ID_MENUITEM32788
+        MENUITEM "补充保险消费汇总",            ID_MENU_REPORT_BCBX_HZ
+        MENUITEM "删除查询",                    ID_MENU_REPORT_DEL_MZCQ
+        MENUITEM "药品查询",                    ID_MENUITEM_MED_QUERY
+        MENUITEM SEPARATOR
+        MENUITEM "供养亲属报销情况查询",        ID_MENUITEM_AFFINITY_QUERY
+        MENUITEM "补充保险门诊查询",            ID_MENUITEM_EMP_QUERY
+        MENUITEM "供养亲属门诊查询",            ID_MENUITEM_RELATE_QUERY
+    END
+    POPUP "基础表设置"
+    BEGIN
+        MENUITEM "企业部门设置",                ID_MENU_BASE_DEPART_SET
+        MENUITEM "处室名称设置",                ID_MENU_BASE_DEPART2_SET
+        MENUITEM SEPARATOR
+        MENUITEM "支出项目分类",                ID_MENU_COST_CLASS_A
+        MENUITEM "支出详细目录设置",            ID_MENU_COST_CLASS_B
+        MENUITEM "年度费用预算",                ID_MENU_COST_BUDGET
+        MENUITEM SEPARATOR
+        MENUITEM "药品编码管理",                ID_MENU_MEDCODE_MANAGER
+        MENUITEM "药品类别管理",                ID_MENU_MEDCODE_SORT
+    END
+    POPUP "系统设置"
+    BEGIN
+        MENUITEM "应用程序权限分配",            ID_MENU_SYS_PRIVI_SET
+        MENUITEM SEPARATOR
+        MENUITEM "锁定程序",                    ID_MENU_LOCK
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 his3(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_QUICK MENU DISCARDABLE 
+BEGIN
+    POPUP "划价药品"
+    BEGIN
+        MENUITEM "修改数量",                    ID_MENUITEM_MED_MODIFY
+        MENUITEM SEPARATOR
+        MENUITEM "删除选中药品",                ID_MENUITEM_HJ_SEL_DEL
+        MENUITEM SEPARATOR
+        MENUITEM "删除全部",                    ID_MENUITEM_HJ_ALL_DEL
+    END
+    POPUP "其它项目收费"
+    BEGIN
+        MENUITEM "修改价格",                    ID_MENUITEM_OTHER_MODIFY
+        MENUITEM SEPARATOR
+        MENUITEM "删除所选项目",                ID_MENUITEM_G2S_DEL
+        MENUITEM SEPARATOR
+        MENUITEM "全部删除",                    ID_MENUITEM_G2A_DEL
+    END
+    POPUP "帐户支付"
+    BEGIN
+        MENUITEM "修改支付金额",                ID_MENUITEM_ACCOUNT_MODIFY
+        MENUITEM SEPARATOR
+        MENUITEM "删除选中",                    ID_MENUITEM_ACCOUNT_SDEL
+        MENUITEM SEPARATOR
+        MENUITEM "全部删除",                    ID_MENUITEM_ACCOUNT_ADEL
+    END
+    POPUP "门诊列表"
+    BEGIN
+        MENUITEM "病人医疗详单",                ID_MENU_GH_VIEWLIST
+        MENUITEM SEPARATOR
+        MENUITEM "输出 Excel",                  ID_MENU_GH_LISTTOEXCEL
+        MENUITEM SEPARATOR
+        MENUITEM "删除选中项目",                ID_MENU_GH_DELETE
+    END
+    POPUP "支出项目分类"
+    BEGIN
+        MENUITEM "添加新项目",                  ID_MENU_COST_ADD
+        MENUITEM "修改项目名称",                ID_MENU_COST_MODIFY
+        MENUITEM SEPARATOR
+        MENUITEM "恢复已删除项目",              ID_MENU_COST_RESTORE
+        MENUITEM "删除项目",                    ID_MENU_COST_DEL
+    END
+    POPUP "支出项目2分类"
+    BEGIN
+        MENUITEM "添加新项目",                  ID_MENU_COST_2_ADD
+        MENUITEM "修改项目名称",                ID_MENU_COST_2_MODIFY
+        MENUITEM SEPARATOR
+        MENUITEM "恢复已删除项目",              ID_MENU_COST_2_RESTORE
+        MENUITEM "删除项目",                    ID_MENU_COST_2_DEL
+    END
+    POPUP "费用报销导出"
+    BEGIN
+        MENUITEM "输出 Excel",                  ID_MENUITEM_REPORT_EXCEL
+        MENUITEM SEPARATOR
+        MENUITEM "删除 (&D)",                   ID_MENUITEM_REPORT_DEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 his3"
+FONT 12, "新宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,8,20,20
+    LTEXT           "his3 1.0 版",IDC_STATIC_VER,40,10,119,10,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,50,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "his3 1.0 版",IDC_STATIC_VER2,39,23,119,20,SS_NOPREFIX
+END
+
+IDD_DIALOG_SPLASH DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_POPUP | WS_BORDER
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS_SPLASH,"msctls_progress32",0x0,
+                    7,14,173,21
+END
+
+IDD_DIALOG_INDICATE DIALOG DISCARDABLE  0, 0, 189, 22
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    0,0,189,22
+END
+
+IDD_DIALOG_GH DIALOG DISCARDABLE  0, 0, 284, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "挂号"
+FONT 12, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_KH,197,17,67,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NAME,61,43,67,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SEX,197,43,67,69,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_AGE,61,64,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESS,150,64,114,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "挂  号",IDC_BUTTON_OK,164,206,53,15
+    PUSHBUTTON      "退  出",IDC_BUTTON_CANCEL,224,206,53,15
+    CTEXT           "卡  号",IDC_STATIC,145,17,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "姓  名",IDC_STATIC,9,43,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "挂号类型",IDC_STATIC,9,17,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "性  别",IDC_STATIC,145,43,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "年  龄",IDC_STATIC,9,65,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_GH_TYPE,61,17,75,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,7,270,29
+    PUSHBUTTON      "保  存",IDC_BUTTON_ADD,104,206,53,15,NOT WS_VISIBLE
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,84,
+                    270,119
+    PUSHBUTTON      "删  除",IDC_BUTTON_GRID_DEL,44,206,53,15,NOT WS_VISIBLE
+    CTEXT           "地  址",IDC_STATIC,108,64,39,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "...",IDC_BUTTON_QUERY,265,16,10,14
+END
+
+IDD_DIALOG_LOGON DIALOG DISCARDABLE  0, 0, 158, 125
+STYLE DS_SYSMODAL | WS_POPUP | WS_BORDER
+FONT 12, "新宋体"
+BEGIN
+    CONTROL         "登录(&O)",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,19,
+                    103,50,14
+    CONTROL         "退出(&Q)",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    89,103,50,14
+    COMBOBOX        IDC_COMBO1,51,46,90,114,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,51,63,90,108,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,51,80,90,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "科室名称",IDC_STATIC,9,47,34,11,SS_CENTERIMAGE
+    RTEXT           "姓名",IDC_STATIC,24,64,19,11,SS_CENTERIMAGE
+    RTEXT           "您的密码",IDC_STATIC,9,80,34,11,SS_CENTERIMAGE
+    CONTROL         134,IDC_STATIC_BMP,"Static",SS_BITMAP,0,0,158,41
+END
+
+IDD_DIALOG_HJ DIALOGEX 0, 0, 406, 280
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "药品划价、收费"
+FONT 12, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_YS,46,7,38,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PY,46,25,38,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_NUM,245,25,38,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_IC,54,160,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TC,54,177,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DBJZ,54,193,50,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_GWY,54,210,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_JGC,54,226,50,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "收费保存",IDOK,294,259,50,14
+    PUSHBUTTON      "退  出",IDCANCEL,349,259,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,42,
+                    280,100
+    CONTROL         "",IDC_MSHFLEXGRID2,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,289,
+                    42,110,100
+    CTEXT           "医  生",IDC_STATIC,9,7,34,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "挂号类型",IDC_STATIC,91,7,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_TYPE,127,7,38,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "姓  名",IDC_STATIC,171,7,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_NAME,208,7,38,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "性  别",IDC_STATIC,251,7,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_SEX,287,7,24,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "年  龄",IDC_STATIC,321,7,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDITHJ_AGE,361,7,38,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "拼  音",IDC_STATIC,9,25,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "数  量",IDC_STATIC,208,25,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "名  称",IDC_STATIC,91,25,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_MC,128,25,78,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_COST,54,145,50,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "总费用",IDC_STATIC,7,145,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_CASH,165,145,50,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "现  金",IDC_STATIC,118,145,42,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "统  筹",IDC_STATIC,7,177,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "IC 卡",IDC_STATIC_IC,7,160,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "公务员补助",IDC_STATIC,7,210,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "建国前补助",IDC_STATIC,7,226,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "大病救助",IDC_STATIC,7,193,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "补充/亲属帐户支付",IDC_STATIC,244,145,155,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_MSHFLEXGRID3,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,244,
+                    162,155,65
+    PUSHBUTTON      "打  印",IDC_BUTTON_PRINT,236,259,50,14
+    EDITTEXT        IDC_EDIT_ACCOUNT,165,161,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "内部帐户",IDC_STATIC,118,161,42,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_WORKUNIT,165,210,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "单位支付",IDC_STATIC,118,210,42,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_RATIO,165,193,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "报销比例",IDC_STATIC,118,193,42,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_YUER,165,177,50,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "帐户余额",IDC_STATIC,118,177,42,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_REAL_SS,54,242,50,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "实  收",IDC_STATIC,7,242,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_REAL_ZL,165,242,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "找  零",IDC_STATIC,118,242,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "中药合计",IDC_STATIC,118,225,42,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_CHINA_MED,165,226,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_MED_STOCKLIST DIALOG DISCARDABLE  0, 0, 305, 156
+STYLE WS_POPUP | WS_BORDER
+FONT 12, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_PY,50,3,66,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,0,18,
+                    305,138
+    CTEXT           "拼  音",IDC_STATIC,2,3,47,12,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_MESSAGE,120,3,182,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DIALOG_OTHER_EXES DIALOG DISCARDABLE  0, 0, 296, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "其它费用列表"
+FONT 12, "宋体"
+BEGIN
+    PUSHBUTTON      "确  定",IDOK,179,161,50,14
+    PUSHBUTTON      "退  出",IDCANCEL,239,161,50,14
+    CTEXT           "类  别",IDC_STATIC,7,7,31,12,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_COMBO_TYPE,39,7,100,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_MSHFLEXGRID_SRC,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,23,
+                    132,124
+    CONTROL         "",IDC_MSHFLEXGRID_DST,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,167,
+                    23,122,124
+    PUSHBUTTON      ">",IDC_BUTTON_S_ADD,143,50,22,14
+    PUSHBUTTON      ">>",IDC_BUTTON_A_ADD,143,65,22,14
+    PUSHBUTTON      "<",IDC_BUTTON_S_DEL,143,81,22,14
+    PUSHBUTTON      "<<",IDC_BUTTON_A_DEL,143,97,22,14
+    CTEXT           "拼  音",IDC_STATIC,168,7,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,203,7,86,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ACCOUNT_QUERY DIALOGEX 0, 0, 289, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "帐户查询"
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "查  询",IDOK,175,152,50,14
+    PUSHBUTTON      "退  出",IDCANCEL,232,152,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,32,
+                    275,73
+    CTEXT           "帐号类型",IDC_STATIC,7,13,38,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_QKH,146,13,49,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_TYPE,47,13,54,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "卡  号",IDC_STATIC,105,13,38,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_KXM,240,13,42,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CTEXT           "姓  名",IDC_STATIC,199,13,38,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_MSHFLEXGRID2,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,
+                    107,275,42
+    PUSHBUTTON      "保  存",IDBUTTON_ADD,119,152,50,14
+END
+
+IDD_FORM_GHLIST DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,0,25,
+                    186,45
+    CTEXT           "Static",IDC_STATIC_TITLE,1,1,185,19,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_DIALOG_GH_QUERY DIALOG DISCARDABLE  0, 0, 254, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "门诊查询"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "查  询",IDOK,141,122,50,14
+    PUSHBUTTON      "退  出",IDCANCEL,197,122,50,14
+    GROUPBOX        "",IDC_STATIC,3,7,244,107
+    CTEXT           "开始日期",IDC_STATIC,6,24,41,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,52,24,58,13
+    CTEXT           "开始日期",IDC_STATIC,135,24,41,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,181,24,58,13
+    CTEXT           "挂号类型",IDC_STATIC,6,50,41,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_TYPE,52,51,58,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "姓  名",IDC_STATIC,135,50,41,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_YS,52,75,58,13,ES_AUTOHSCROLL
+    CTEXT           "医  生",IDC_STATIC,6,75,41,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "收费员",IDC_STATIC,135,75,41,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_XM,181,49,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SFY,181,75,58,13,ES_AUTOHSCROLL
+    CTEXT           "取药状态",IDC_STATIC,4,105,41,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_MED_STATUS,50,106,58,83,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "人员性质",IDC_STATIC_EMP_STA,133,105,41,13,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_EMP_STA,179,106,58,83,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_REPORT_VIEW DIALOG DISCARDABLE  0, 0, 490, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "就诊费用报表"
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,296,10,66,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,417,10,66,13
+    CONTROL         "查  询",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,375,214,
+                    50,14
+    CONTROL         "退  出",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,433,
+                    214,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,31,
+                    476,178
+    CTEXT           "起始日期",IDC_STATIC,247,11,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "终止日期",IDC_STATIC,368,11,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "输出 EXCEL",IDBUTTON_TOEXCEL,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,316,214,50,14
+    CTEXT           "收费员",IDC_STATIC,7,11,44,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,57,11,61,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "医保汇总",IDOK_YB,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    257,214,50,14
+END
+
+IDD_DIALOG_GETMED DIALOG DISCARDABLE  0, 0, 327, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "待取药人员列表"
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "查  询",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,209,165,
+                    50,14
+    CONTROL         "退  出",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,270,
+                    165,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,7,
+                    313,153
+END
+
+IDD_DIALOG_PERSON_QUERY DIALOG DISCARDABLE  0, 0, 359, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "人员信息查询"
+FONT 12, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,169,7,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MC,283,7,69,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "查  询",IDOK,247,194,50,14
+    PUSHBUTTON      "退  出",IDCANCEL,302,194,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,29,
+                    345,160
+    CTEXT           "卡  号",IDC_STATIC_2,131,7,36,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "部  门",IDC_STATIC_1,7,7,36,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,45,8,80,127,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "姓  名",IDC_STATIC_3,245,7,36,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_DIALOG_WAIT DIALOG DISCARDABLE  0, 0, 188, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_CHILD
+FONT 14, "新宋体"
+BEGIN
+    CTEXT           "",IDC_STATIC_TITLE,0,0,188,56,SS_CENTERIMAGE
+END
+
+IDD_DIALOG_PRIVILEGE DIALOG DISCARDABLE  0, 0, 269, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限分配"
+FONT 12, "宋体"
+BEGIN
+    PUSHBUTTON      "保  存",IDOK,157,151,50,14
+    PUSHBUTTON      "退  出",IDCANCEL,212,151,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,26,
+                    255,120
+    CTEXT           "科  室",IDC_STATIC1,7,7,39,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,48,7,61,91,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "姓  名",IDC_STATIC2,154,7,39,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO2,195,7,61,91,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "新增",IDOK_ADD,100,151,50,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_UPGRADE DIALOG DISCARDABLE  0, 0, 322, 58
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,26,308,25
+    CTEXT           "",IDC_STATIC_TITLE,7,7,308,17,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_DIALOG_LOCK DIALOG DISCARDABLE  0, 0, 177, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "锁定"
+FONT 12, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "解  锁(&U)",IDOK,62,84,58,14
+    CTEXT           "科  室",IDC_STATIC,7,8,58,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "姓  名",IDC_STATIC,7,31,58,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_KS,76,8,91,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_XM,76,31,91,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "密  码",IDC_STATIC,7,54,58,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PASSWORD,76,54,91,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_FORM_GHLIST_DEL DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE WS_CHILD
+FONT 10, "新宋体"
+BEGIN
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,0,34,
+                    185,50
+    CTEXT           "Static",IDC_STATIC_TITLE,0,3,185,18,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_DIALOG_CLASS_A DIALOG DISCARDABLE  0, 0, 383, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "项目支出"
+FONT 12, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "查询",IDOK,269,199,50,14
+    PUSHBUTTON      "退出",IDCANCEL,326,199,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,7,
+                    369,187
+END
+
+IDD_DIALOG_COST_ADD DIALOG DISCARDABLE  0, 0, 262, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "支出项目"
+FONT 12, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,148,98,50,14
+    PUSHBUTTON      "退出",IDCANCEL,205,98,50,14
+    EDITTEXT        IDC_EDIT_NAME1,85,22,163,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORDER,85,43,48,16,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_CMT,85,66,163,16,ES_AUTOHSCROLL
+    CTEXT           "分类名称",IDC_STATIC,17,22,63,16,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "排列顺序",IDC_STATIC,17,43,63,16,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "备注",IDC_STATIC,17,66,63,16,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "类别设计",IDC_STATIC,7,7,248,85
+END
+
+IDD_DIALOG_COST_2_ADD DIALOG DISCARDABLE  0, 0, 315, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,199,116,50,14
+    PUSHBUTTON      "退出",IDCANCEL,258,116,50,14
+    GROUPBOX        "基本信息",IDC_STATIC,7,7,301,101
+    CTEXT           "类别",IDC_STATIC,16,25,46,12,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,65,25,80,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "名称",IDC_STATIC,152,25,46,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_MC,202,25,99,12,ES_AUTOHSCROLL
+    CTEXT           "顺序",IDC_STATIC,16,48,46,12,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_SEQ,65,48,78,12,ES_AUTOHSCROLL
+    CTEXT           "备注",IDC_STATIC,16,74,46,12,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_REM,65,74,234,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_COST_BUDGET DIALOG DISCARDABLE  0, 0, 382, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "新宋体"
+BEGIN
+    PUSHBUTTON      "查询",IDOK_QUERY,208,202,50,14
+    PUSHBUTTON      "保存",IDOK,266,202,50,14
+    PUSHBUTTON      "退出",IDCANCEL,325,202,50,14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,30,
+                    368,168
+    CTEXT           "类别",IDC_STATIC,11,10,42,12,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_COMBO_TYPE,54,10,86,120,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "名称",IDC_STATIC,157,10,39,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,198,10,57,12,ES_AUTOHSCROLL
+    CTEXT           "年度",IDC_STATIC,263,10,39,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_YEAR,306,10,52,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_COST_BUDGET_ADD DIALOGEX 0, 0, 396, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "新宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER,70,149,57,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PIAOJU,269,39,87,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FUJIAN,269,59,87,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZHONGFEIYONG,269,80,87,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCALE,269,102,44,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CMMT,213,158,175,63,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "保存",IDOK,284,232,50,14
+    PUSHBUTTON      "退出",IDCANCEL,339,232,50,14
+    CTEXT           "医院费用支出",IDC_STATIC_TITLE,7,7,382,18,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "基本项目",IDC_STATIC,7,27,382,200
+    CTEXT           "日期",IDC_STATIC,16,65,43,13,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_CUR,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,70,65,102,13
+    CTEXT           "类别A",IDC_STATIC,16,85,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_COST_A,70,86,102,98,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "类别B",IDC_STATIC,16,108,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_COST_B,70,109,102,98,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,198,39,
+                    1,184
+    CTEXT           "使用者",IDC_STATIC,16,149,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "验收人",IDC_STATIC,16,169,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "经手人",IDC_STATIC,16,188,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "审批人",IDC_STATIC,16,209,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "凭证号",IDC_STATIC,16,41,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_RSS,70,169,57,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_JSR,70,188,57,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SPR,70,209,57,13,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "单据张数",IDC_STATIC,215,39,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "附件张数",IDC_STATIC,215,59,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "报销总额",IDC_STATIC,215,80,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "报销比例",IDC_STATIC,215,102,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "实报金额",IDC_STATIC,215,125,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "备注：",IDC_STATIC,208,147,31,11
+    EDITTEXT        IDC_EDIT_SJBS,269,125,87,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "打印",IDOK2,227,232,50,14
+    CTEXT           "预算结余",IDC_STATIC,16,127,43,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_BALANCE,70,127,74,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "验收人",IDOK_RY1,131,169,40,14
+    PUSHBUTTON      "经手人",IDOK_RY2,131,188,40,14
+    PUSHBUTTON      "审批人",IDOK_RY3,131,208,40,14
+    EDITTEXT        IDC_EDIT_100SCALE,315,102,41,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_BALANCE2,145,127,46,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CREDENCE,71,40,102,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_OPERATOR_SEL DIALOG DISCARDABLE  0, 0, 307, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "操作人员选择"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "查询",IDOK,192,171,50,14
+    PUSHBUTTON      "退出",IDCANCEL,250,171,50,14
+    CTEXT           "科室",IDC_STATIC,7,7,34,13,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_COMBO_DEP_SEL,45,8,90,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "姓名",IDC_STATIC,173,7,34,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,210,7,81,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,24,
+                    293,141
+    PUSHBUTTON      "选择",IDB_SEL,131,171,50,14
+END
+
+IDD_FORM_DECHARGELIST DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    CTEXT           "Static",IDC_STATIC_TITLE,0,0,187,20,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,1,21,
+                    186,53
+END
+
+IDD_DIALOG_DECHARGE_QUERY DIALOG DISCARDABLE  0, 0, 277, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "费用报销查询"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "查询",IDOK,160,141,50,14
+    PUSHBUTTON      "退出",IDCANCEL,220,141,50,14
+    CTEXT           "开始日期",IDC_STATIC,12,19,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,65,19,64,14
+    CTEXT           "结束日期",IDC_STATIC,145,20,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,198,20,64,14
+    CTEXT           "使用者",IDC_STATIC,11,83,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_SYR,63,82,63,14,ES_AUTOHSCROLL
+    CTEXT           "分类A",IDC_STATIC,12,39,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_A,67,39,141,97,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "分类B",IDC_STATIC,12,61,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_B,65,62,141,95,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "验收人",IDC_STATIC,144,83,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_YSR,195,82,52,14,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "经手人",IDC_STATIC,12,110,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "审批人",IDC_STATIC,138,110,48,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_JSR,63,109,52,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SPR,189,109,52,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "基本信息",IDC_STATIC,7,7,263,126
+    PUSHBUTTON      ">>",IDC_BUTTON_JSR,118,107,18,16
+    PUSHBUTTON      ">>",IDC_BUTTON_RSR,249,80,18,16
+    PUSHBUTTON      ">>",IDC_BUTTON_SPR,244,107,18,16
+END
+
+IDD_FORM_USED_ALL DIALOG DISCARDABLE  0, 0, 320, 199
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Static",IDC_STATIC_TITLE,7,7,306,27,SS_CENTERIMAGE
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,41,
+                    306,139
+END
+
+IDD_DIALOG_BCYB_CX DIALOG DISCARDABLE  0, 0, 226, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "汇总查询条件"
+FONT 12, "新宋体"
+BEGIN
+    CONTROL         "查询(&S)",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,91,
+                    103,50,14
+    CONTROL         "取消(&C)",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    158,103,50,14
+    CTEXT           "卡   号",IDC_STATIC,27,47,58,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "姓   名",IDC_STATIC,27,74,58,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "年   度",IDC_STATIC,27,17,58,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_YEAR,91,19,105,66,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDITC_KH,91,47,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDITC_XM,91,74,105,14,ES_AUTOHSCROLL
+    CONTROL         "输出到EXCEL",IDEXCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    22,103,50,14
+END
+
+IDD_DIALOG_BUZU DIALOG DISCARDABLE  0, 0, 453, 255
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "年度补助"
+FONT 12, "新宋体"
+BEGIN
+    CONTROL         "补助文件",IDOK_EXCEL_IN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,62,234,50,14
+    CONTROL         "退出(&Q)",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    396,234,50,14
+    CONTROL         "充值",IDOK_EXECUTE_ADD,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,7,234,50,14
+    CONTROL         "查询补助",IDOK_QUERY,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    339,234,50,14
+    CONTROL         "OK",IDOK4,"Button",BS_OWNERDRAW | WS_TABSTOP,269,234,50,
+                    14
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,30,
+                    439,196
+    CTEXT           "年度",IDC_STATIC,11,11,50,14,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_COMBO_YEAR,65,13,43,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "卡号",IDC_STATIC,154,11,50,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "姓名",IDC_STATIC,295,11,50,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_KH0,210,11,72,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XM,349,11,72,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MED_CODE DIALOG DISCARDABLE  0, 0, 457, 236
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "新宋体"
+BEGIN
+    PUSHBUTTON      "查询(&S)",IDOK,343,215,50,14
+    PUSHBUTTON      "退出(&Q)",IDCANCEL,400,215,50,14
+    CTEXT           "拼音",IDC_STATIC,7,7,40,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "类别1",IDC_STATIC,217,7,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "编码",IDC_STATIC,111,7,40,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "类别2",IDC_STATIC,328,7,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PY,49,7,51,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BM,155,7,51,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,258,7,68,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,372,7,68,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,25,
+                    443,185
+    PUSHBUTTON      "修改(&M)",IDOK_MODIFY,281,215,50,14
+    PUSHBUTTON      "新增(&A)",IDOK_ADD,224,215,50,14
+END
+
+IDD_DIALOG_MED_CODE_MODIFY DIALOG DISCARDABLE  0, 0, 366, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "新宋体"
+BEGIN
+    PUSHBUTTON      "保存(&S)",IDOK,249,178,50,14
+    PUSHBUTTON      "退出(&Q)",IDCANCEL,309,178,50,14
+    CTEXT           "大类",IDC_STATIC,15,59,38,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "小类",IDC_STATIC,126,59,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "分类",IDC_STATIC,245,59,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,57,59,67,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,168,59,67,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TYPE,286,59,67,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "名称",IDC_STATIC,15,83,38,15,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "规格",IDC_STATIC,127,83,38,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "单位",IDC_STATIC,245,83,38,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_MC,57,83,68,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GG,167,83,68,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DW,285,83,68,15,ES_AUTOHSCROLL
+    CTEXT           "拼音",IDC_STATIC,15,110,38,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "最高库存",IDC_STATIC,127,110,38,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "最低库存",IDC_STATIC,245,110,38,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PY1,57,110,68,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAXKC,167,110,68,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINKC,285,110,68,15,ES_AUTOHSCROLL
+    CTEXT           "备注",IDC_STATIC,15,131,38,16,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_BZ,58,131,295,16,ES_AUTOHSCROLL
+    CTEXT           "Static",IDC_STATIC_TITLE,7,7,352,27,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    GROUPBOX        "基本信息",IDC_STATIC,7,39,352,122
+END
+
+IDD_DIALOG_MEDQUERY DIALOG DISCARDABLE  0, 0, 310, 149
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "查询",IDOK,191,128,50,14
+    PUSHBUTTON      "退出",IDCANCEL,253,128,50,14
+    CTEXT           "拼音",IDC_STATIC,7,26,56,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "编码",IDC_STATIC,7,51,56,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "名称",IDC_STATIC,159,26,56,16,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PY,67,26,81,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MC,220,26,81,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BM,67,51,81,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "导出Excel",IDEXCEL,133,128,50,14
+    CTEXT           "药房",IDC_STATIC,159,51,56,16,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_KF,220,53,81,82,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "有效期限",IDC_STATIC,7,75,56,16,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,78,76,81,16
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,
+                    79,8,8
+    GROUPBOX        "条件",IDC_STATIC,7,7,296,110
+END
+
+IDD_DIALOG_BCBX_ZJB DIALOG DISCARDABLE  0, 0, 464, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "基金征集表"
+FONT 12, "新宋体"
+BEGIN
+    PUSHBUTTON      "查询(&Q)",IDOK,348,225,50,14
+    PUSHBUTTON      "退出(&Q)",IDCANCEL,407,225,50,14
+    CTEXT           "Static",IDC_STATIC_TITLE,7,7,450,20,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,46,
+                    450,173
+    CTEXT           "查询年度",IDC_STATIC,340,31,40,13,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_YEAR,387,31,64,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "导出Excel",IDEXCEL,284,225,50,14
+END
+
+IDD_FORM_MED_CONSUME DIALOG DISCARDABLE  0, 0, 264, 201
+STYLE WS_CHILD
+FONT 12, "新宋体"
+BEGIN
+    CTEXT           "Static",IDC_STATIC_TITLE,7,7,250,19,SS_CENTERIMAGE
+    CONTROL         "",IDC_MSHFLEXGRID1,
+                    "{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",WS_TABSTOP,7,30,
+                    250,150
+END
+
+IDD_DIALOG_QUERY_CONSUME DIALOG DISCARDABLE  0, 0, 290, 144
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "新宋体"
+BEGIN
+    PUSHBUTTON      "查询",IDOK,176,123,50,14
+    PUSHBUTTON      "退出",IDCANCEL,233,123,50,14
+    CTEXT           "起始日期",IDC_STATIC,10,35,51,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,63,35,71,14
+    CTEXT           "终止日期",IDC_STATIC,152,35,51,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,212,35,71,14
+    CTEXT           "类别-1",IDC_STATIC,10,60,51,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "类别-2",IDC_STATIC,152,60,51,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,63,61,71,84,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,212,61,71,84,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "拼音",IDC_STATIC,10,86,51,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "编码",IDC_STATIC,152,86,51,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_PY,63,85,71,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BM,212,85,71,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "导出Excel",IDOK2,115,123,50,14
+END
+
+IDD_DIALOG_PLANASWHOLE DIALOG DISCARDABLE  0, 0, 218, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "统筹利息结算"
+FONT 12, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "统筹利息",IDOK,29,116,50,14
+    PUSHBUTTON      "退出",IDCANCEL,135,116,50,14
+    CTEXT           "年    度",IDC_STATIC,30,28,57,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_YEAR,94,28,79,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "利    率",IDC_STATIC,29,62,57,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT_ACCURAL,93,62,80,12,ES_AUTOHSCROLL
+    LTEXT           "结算利率:如当前利率为3.6%,只需输入3.6即可",IDC_STATIC,
+                    32,79,144,22
+END
+
+IDD_DIALOG_AFFINITY_QUERY DIALOG DISCARDABLE  0, 0, 566, 320
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "新宋体"
+BEGIN
+    PUSHBUTTON      "查询",IDOK,430,293,50,14
+    PUSHBUTTON      "退出",IDCANCEL,498,293,50,14
+    CONTROL         "Custom1",IDC_CUSTOM_GRID,"MFCGridCtrl",WS_TABSTOP,7,52,
+                    552,231
+    PUSHBUTTON      "导出 EXCEL",ID_BUTTON_EXCEL,364,293,50,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,426,35,55,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,503,35,55,13
+    LTEXT           "截止",IDC_STATIC,482,35,20,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "开始",IDC_STATIC,403,35,21,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "类别",IDC_STATIC,198,35,25,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO1,227,36,46,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "卡号",IDC_STATIC,10,35,41,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "姓名",IDC_STATIC,116,35,20,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,55,35,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,137,35,58,13,ES_AUTOHSCROLL
+    CTEXT           "Static",IDC_STATIC_TITLE,7,7,552,24,SS_CENTERIMAGE
+    LTEXT           "部门",IDC_STATIC,275,35,25,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    COMBOBOX        IDC_COMBO_DEPART,303,36,91,148,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_EMP_QUERY DIALOG DISCARDABLE  0, 0, 566, 320
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "新宋体"
+BEGIN
+    PUSHBUTTON      "查询",IDOK,430,293,50,14
+    PUSHBUTTON      "退出",IDCANCEL,498,293,50,14
+    CONTROL         "Custom1",IDC_CUSTOM_GRID,"MFCGridCtrl",WS_TABSTOP,7,52,
+                    552,231
+    PUSHBUTTON      "导出 EXCEL",ID_BUTTON_EXCEL,364,293,50,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,426,35,55,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,503,35,55,13
+    LTEXT           "截止",-1,482,35,20,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "开始",-1,403,35,21,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "卡号",-1,10,35,41,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "姓名",-1,138,35,20,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,55,35,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,159,35,58,13,ES_AUTOHSCROLL
+    CTEXT           "Static",IDC_STATIC_TITLE,7,7,552,24,SS_CENTERIMAGE
+    LTEXT           "部门",-1,238,35,25,13,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_COMBO_DEPART,266,36,91,148,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_RELATE_QUERY DIALOG DISCARDABLE  0, 0, 566, 320
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "新宋体"
+BEGIN
+    PUSHBUTTON      "查询",IDOK,430,293,50,14
+    PUSHBUTTON      "退出",IDCANCEL,498,293,50,14
+    CONTROL         "Custom1",IDC_CUSTOM_GRID,"MFCGridCtrl",WS_TABSTOP,7,52,
+                    552,231
+    PUSHBUTTON      "导出 EXCEL",ID_BUTTON_EXCEL,364,293,50,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,426,35,55,13
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,503,35,55,13
+    LTEXT           "截止",-1,482,35,20,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "开始",-1,403,35,21,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "卡号",-1,10,35,41,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "姓名",-1,138,35,20,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT1,55,35,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,159,35,58,13,ES_AUTOHSCROLL
+    CTEXT           "Static",IDC_STATIC_TITLE,7,7,552,24,SS_CENTERIMAGE
+    LTEXT           "部门",-1,238,35,25,13,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_COMBO_DEPART,266,36,91,148,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "his3 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "淮电医院\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "his3.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "淮电医院 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_GH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_DIALOG_HJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_DIALOG_OTHER_EXES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_ACCOUNT_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_FORM_GHLIST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_DIALOG_GH_QUERY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DIALOG_REPORT_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_DIALOG_GETMED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DIALOG_PERSON_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_PRIVILEGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DIALOG_UPGRADE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_DIALOG_LOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_FORM_GHLIST_DEL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 185
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_DIALOG_CLASS_A, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_DIALOG_COST_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_COST_2_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DIALOG_COST_BUDGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_DIALOG_COST_BUDGET_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_OPERATOR_SEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_DIALOG_DECHARGE_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_FORM_USED_ALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_DIALOG_BCYB_CX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_DIALOG_BUZU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_DIALOG_MED_CODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 450
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_DIALOG_MED_CODE_MODIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_DIALOG_MEDQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALOG_BCBX_ZJB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 457
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_FORM_MED_CONSUME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG_QUERY_CONSUME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_DIALOG_PLANASWHOLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG_AFFINITY_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 559
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+
+    IDD_DIALOG_EMP_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 559
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+
+    IDD_DIALOG_RELATE_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 559
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_GH DLGINIT
+BEGIN
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x37d0, 0x0000, 0x1899, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8000, 
+0x00ff, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_HJ DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x39e1, 0x0000, 0x14ac, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8000, 
+0x0000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x7cdc, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    IDC_MSHFLEXGRID2, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x16bd, 0x0000, 0x14ac, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8000, 
+0x0000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x7cdc, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    IDC_MSHFLEXGRID3, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x200a, 0x0000, 0x0d70, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8000, 
+0x0000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x7cdc, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_MED_STOCKLIST DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3f0c, 0x0000, 0x1c87, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x8000, 0x00c0, 0xffff, 0x00ff, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x00ff, 0x0000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_OTHER_EXES DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID_SRC, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1b49, 0x0000, 0x19a2, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xb774, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    IDC_MSHFLEXGRID_DST, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1938, 0x0000, 0x19a2, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xb774, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_ACCOUNT_QUERY DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x38d8, 0x0000, 0x0f17, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8000, 
+0x00ff, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x7cdc, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    IDC_MSHFLEXGRID2, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x38d8, 0x0000, 0x08af, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x00ff, 
+0x0000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x7cdc, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_FORM_GHLIST DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 450, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2673, 0x0000, 0x094d, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8080, 
+0x0000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0xcb04, 0xccce, 0x01e5, 0x0300, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0x9001, 
+0x015f, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 
+0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+
+    0
+END
+
+IDD_DIALOG_REPORT_VIEW DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x6264, 0x0000, 0x24cb, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_GETMED DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x40b3, 0x0000, 0x1fa0, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8000, 
+0x00c0, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_PERSON_QUERY DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4750, 0x0000, 0x2113, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x8000, 
+0x00ff, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_PRIVILEGE DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x34b6, 0x0000, 0x18ce, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0080, 
+0x0080, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_FORM_GHLIST_DEL DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 421, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x217d, 0x0000, 0x085f, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0xd006, 0xcbc2, 0xccce, 0x00e5, 0x0000, 0x0000, 
+0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 
+0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_CLASS_A DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 421, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4c46, 0x0000, 0x26a7, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xd006, 0xcbc2, 0xccce, 0x00e5, 0x0000, 0x0000, 
+0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 
+0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_COST_BUDGET DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 421, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4c11, 0x0000, 0x22ba, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xd006, 0xcbc2, 0xccce, 0x00e5, 0x0000, 0x0000, 
+0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 
+0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_OPERATOR_SEL DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3c91, 0x0000, 0x1d25, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_FORM_DECHARGELIST DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2673, 0x0000, 0x0af5, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_FORM_USED_ALL DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x2f70, 0x0000, 0x13be, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_BUZU DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 421, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x5abe, 0x0000, 0x2884, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x02bc, 0xd4c0, 0x0001, 0xd006, 0xcbc2, 0xccce, 0x00e5, 0x0000, 0x0000, 
+0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 
+0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_MED_CODE DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 421, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x5019, 0x0000, 0x1f1c, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0101, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x7cdc, 0x0001, 0xd006, 0xcbc2, 0xccce, 0x00e5, 0x0000, 0x0000, 
+0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 
+0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_BCBX_ZJB DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 421, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x5d05, 0x0000, 0x23c3, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0xd4c0, 0x0001, 0xd006, 0xcbc2, 0xccce, 0x00e5, 0x0000, 0x0000, 
+0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 
+0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_FORM_MED_CONSUME DLGINIT
+BEGIN
+    IDC_MSHFLEXGRID1, 0x37a, 419, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x33ad, 0x0000, 0x1f02, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0005, 0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 
+0x000d, 0x8000, 0x000e, 0x8000, 0x000f, 0x8000, 0x000f, 0x8000, 0x0012, 
+0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0xcb04, 0xccce, 0x00e5, 0x0000, 0x0000, 0x0400, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_AFFINITY_QUERY DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 1, 0
+"\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc5c3, 0xefd5, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xa1d7, 0xbad4, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "淮电医院3"
+    IDR_HIS3TYPE            "\nHis3\nHis3\n\n\nHis3.Document\nHis3 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "淮电医院"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+    ID_INDICATOR_PROMPT     "登录用户: 陈  辉         科室:  新药房"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    IDS_PRIV_PROMPT         "您无权使用此功能,请联系管理人员!!"
+    IDS_HUAJIA_PROMPT       "医保人员信息禁止打印"
+    IDS_STR_VERSION         "1.0.0.22"
+    IDS_STR_UPGRADE_1       "正在连接升级文件!!"
+    IDS_STR_UPGRADE_2       "连接升级文件成功! 正在下载!!"
+    IDS_STR_WAIT_PROMPT     "请稍候,系统正在处理"
+    IDS_STR_VERSION2        "凌绍清\n更新于【2015年12月30日】"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_GHOPER      "挂号就诊"
+    ID_001_001              "挂号"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_LOCK            "锁定应用程序"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_REPORTUSEDALL_TMPL  "\nReportUsedAll\nReport\nReport Files (*.rep)\n.rep\nReportUsedAll.Document\nReport Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_MED_QUERY   "查询库存药品"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\his3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
